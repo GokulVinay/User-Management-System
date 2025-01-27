@@ -1,0 +1,162 @@
+/* Base Styles (Mobile First) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height viewport */
+  background-color: #f4f4f4;
+}
+
+.app-container {
+  padding: 20px;
+  margin: auto;
+  text-align: center; /* Center-align text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  background-color: white;
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  max-width: 90%; /* Prevent container from being too wide */
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center; /* Center-align header text */
+  color: red;
+}
+
+.error-message {
+  color: red;
+}
+
+.form-container,
+.user-table {
+  margin-top: 20px;
+  width: 100%; /* Take up the full width */
+}
+
+.form-header,
+.user-list-header {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center; /* Center-align form headers */
+  color: black;
+  font-style: italic;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: gray;
+}
+
+.submit-button,
+.edit-button,
+.delete-button {
+  font-size: 14px;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  width: 100%; /* Full width on mobile */
+  text-align: center; /* Center-align button text */
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: black;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Table Styles */
+.user-table {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Collapse borders */
+  margin-top: 20px;
+  color: black;
+  padding: 10px;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center; /* Center-align text in table cells */
+
+}
+
+.user-table th {
+  background-color: gray;
+  color: white;
+}
+
+/* Responsive Design: Tablet and Larger Screens */
+@media (min-width: 768px) {
+  .app-container {
+    max-width: 600px; /* Wider container for tablets */
+    padding: 30px;
+  }
+
+  .header {
+    font-size: 28px;
+  }
+
+  .form-header,
+  .user-list-header {
+    font-size: 22px;
+    color: black;
+    font-weight: 400;
+  }
+
+  .input-field {
+    width: 90%; /* Slight margin around fields */
+  }
+
+  .submit-button,
+  .edit-button,
+  .delete-button {
+    width: auto; /* Inline buttons on larger screens */
+    margin: 0 10px;
+    display: inline-block;
+  }
+}
+
+/* Responsive Design: Desktop and Larger Screens */
+@media (min-width: 1200px) {
+  .app-container {
+    max-width: 800px; /* Wider container for desktop */
+  }
+
+  .header {
+    font-size: 32px;
+  }
+
+  .form-header,
+  .user-list-header {
+    font-size: 24px;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 15px; /* Add more padding for larger screens */
+  }
+}
